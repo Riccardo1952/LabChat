@@ -1,0 +1,36 @@
+--------------------------- Inizio progetto ----------------------------------------------------------------------------
+crea repository su github (es.: Riccardo1952-LabBootstrap)
+crea pagina con <settings - Pages>
+vai su rotellina di sinistra (about) e vedi indirizzo del sito di lavoro (es.. https://Riccardo1952.github.io/LabBootstrap).
+crea, in locale, cartella dove clonare il repository
+entra nella cartellina creata con editor
+aprire terminale
+git clone <URL>       L'URL prendilo dal menu a cascata (tasto verde "Code") in github.
+entra nella cartellina clonata con editor
+git status per vedere su quale ramo siamo
+cambiare ramo con git switch gh-pages (per creare: git switch -c <nome nuovo branch>)
+cancella i due files _config.yml e index.md (non ci servono)
+crea file html con editor
+git add .
+git commit -m "messaggio"
+git push
+manda una email con l'invito, a chi (nome utente) dovrà lavorare su questo repository
+
+
+--------------------------- Giornaliero per ricevere modifiche ---------------------------------------------------
+apri, su GitHub, vai all'indirizzo: utente/repository
+apro, in locale, il terminale e la cartellina di destinazione (quella del repository)
+aggiorna il repository locale con <git pull>
+
+--------------------------- Giornaliero per spedire modifiche ---------------------------------------------------
+apri, su GitHub, vai all'indirizzo: utente/repository
+apro, in locale, il terminale e la cartellina di destinazione (quella del repository)
+mi sposto sul ramo di mia competenza (in questo caso: gh-pages) con git switch gh-pages (per creare: git switch -c <nome nuovo branch>)
+comincio a fare le modifiche
+vai alla cartellina che contiene i files modificati da inviare
+git add .
+git commit -m "messaggio"
+git push
+manda una email a chi dovrà lavorare su questo repository
+
+git log --all --decorate --oneline --graph
